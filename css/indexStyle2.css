@@ -42,7 +42,7 @@ img {
   width: 100%;
   height: 3.3em;
   margin-top: -3.3em;
-  background-color: #112031;
+  background-color: #020f1b;
   text-align: right;
   box-shadow: 0px 0px 3px 0px white;
   z-index: 9999;
@@ -158,7 +158,7 @@ hr {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: linear-gradient(#311d3f, #522546, #88304e, #e23e57);
+  background: #112031
 }
 
 /* Handle */
