@@ -11,8 +11,12 @@ body {
   color: white;
 }
 
+#home > .container-fluid {
+  padding: 2.2% 15% 45px;
+}
+
 .container-fluid {
-  padding: 3% 15% 5%;
+  padding: 2.2% 15% 3%;
 }
 
 .container-fluid hr {
@@ -185,7 +189,7 @@ hr {
   border-radius: 10px;
   margin: 3%;
   height: 95%;
-  text-align: center;
+  text-align: left;
 }
 
 .card:hover {
@@ -204,6 +208,7 @@ hr {
 
 li {
   line-height: 3.5rem;
+  margin-left: 7%;
 }
 
 ul {
@@ -218,10 +223,23 @@ ul {
   text-align: center;
 }
 
+.habilidades-col ul{
+  margin-left: 30%;
+}
+
 li {
   color: #fff;
   font-size: 1.5rem;
   list-style: none;
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: orange; /* Change the color */
+  font-weight: bolder; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
 .estrella-rating {
@@ -236,6 +254,14 @@ li {
 
 .text-footer {
   margin-top: 0;
+  margin-bottom: 0;
+}
+
+.text-footer-small{
+  font-size: 0.8rem;
+  line-height: -200px;
+  margin-top: 0;
+  color: #9a9e9e;
 }
 
 .link-footer:hover {
