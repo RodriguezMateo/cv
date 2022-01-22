@@ -4,15 +4,37 @@ body {
   background: #112031;
 }
 
+/* Seccion principal */
 #home {
-  background: #112031;
   width: 100%;
   margin-top: 3.3em;
-  color: white;
 }
 
 #home > .container-fluid {
   padding: 2.2% 15% 45px;
+}
+
+/* Seccion perfil */
+.profile-col{
+  text-align: center;
+}
+
+.img-profile{
+  height: 18vw;
+  width: 20vw;
+  min-height: 250px;
+  margin-top: 5%;
+}
+
+/* Generales */
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 100%;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .container-fluid {
@@ -26,6 +48,10 @@ body {
   width: 95%;
 }
 
+.col-md-6 {
+  padding: 0% 5%;
+}
+
 img {
   height: 300px;
   width: 25vw;
@@ -34,94 +60,6 @@ img {
   text-align: right;
 }
 
-.carousel {
-  text-align: center;
-}
-
-.col-md-6 {
-  padding: 0% 5%;
-}
-.nav-bar {
-  position: fixed;
-  width: 100%;
-  height: 3.3em;
-  margin-top: -3.3em;
-  background-color: #020f1b;
-  text-align: right;
-  box-shadow: 0px 0px 3px 0px white;
-  z-index: 9999;
-}
-.button-bar {
-  display: inline-block;
-  color: white;
-  /*background: linear-gradient(#522546, #E23E57);*/
-  width: 8.3em;
-  height: 3.3em;
-  text-align: center;
-  transition-duration: 0.1s;
-  font-size: 1em;
-  box-shadow: -17px 2px 2px -15px #cdffeb;
-}
-
-.button-bar:hover {
-  /*box-shadow: 3px 3px 3px white;*/
-  /* color: #cdffeb; */
-  transition-duration: 0.3s;
-  box-shadow: -19px 2px 2px -15px orange;
-  border-bottom: 0;
-  left: 0;
-}
-
-.proyectos-btn:hover > h3{
-  position: relative;
-  left: -10%;
-  transition-duration: 0.3s;
-}
-
-.aboutMe-btn:hover > h3{
-  position: relative;
-  left: -13%;
-  transition-duration: 0.3s;
-}
-
-.contacto-btn:hover > h3{
-  position: relative;
-  left: -12%;
-  transition-duration: 0.3s;
-}
-
-
-a {
-  text-decoration: none;
-  color: white;
-  font-size: 100%;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-.home-button {
-  position: absolute;
-  height: 60%;
-  left: 1.5%;
-  top: 18%;
-  filter: invert(100%);
-  transition-duration: 0.3s;
-}
-
-.home-button:hover {
-  filter: invert(0%);
-  transition-duration: 0.3s;
-  cursor: pointer;
-}
-
-.vl {
-  position: relative;
-  display: inline-block;
-  border-left: 2px solid #cdffeb;
-  height: 25%;
-}
 h1 {
   font-size: 5em;
   font-weight: 700;
@@ -134,11 +72,6 @@ h2 {
   text-align: center;
   font-size: 3rem;
   color: #cdffeb;
-}
-
-p {
-  font-size: 1.5rem;
-  margin-top: 3%;
 }
 
 h3 {
@@ -156,24 +89,37 @@ hr {
   width: 5%;
 }
 
-::-webkit-scrollbar {
-  width: 5px;
+li {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  list-style: none;
+  margin-left: 7%;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #5c5f61
+p {
+  font-size: 1.5rem;
+  margin-top: 3%;
+  color: #fff;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #dddcdc;
-  border-radius: 5px;
+ul {
+  padding-left: 0%;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #9a9e9e;
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: orange; /* Change the color */
+  font-weight: bolder; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+/*Escolaridad*/
+
+.carousel {
+  text-align: center;
 }
 
 #carouselProjects {
@@ -181,6 +127,93 @@ hr {
   margin-left: 100px;
   margin-right: 100px;
 }
+
+/*Barra de Navegacion*/
+
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  height: 3.3em;
+  margin-top: -3.3em;
+  background-color: #020f1b;
+  text-align: right;
+  box-shadow: 0px 0px 3px 0px white;
+  z-index: 9999;
+}
+
+.button-bar {
+  display: inline-block;
+  color: white;
+  width: 8.3em;
+  height: 3.3em;
+  text-align: center;
+  transition-duration: 0.1s;
+  font-size: 1em;
+  box-shadow: -17px 2px 2px -15px #cdffeb;
+  cursor: pointer;
+}
+
+.button-bar:hover {
+  transition-duration: 0.3s;
+  box-shadow: -19px 2px 2px -15px orange;
+  border-bottom: 0;
+  left: 0;
+}
+
+.proyectos-btn:hover > h3{
+  position: relative;
+  left: -10%;
+  transition-duration: 0.3s;
+}
+
+.aboutMe-btn:hover > h3{
+  position: relative;
+  left: -13%;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.contact-btn:hover > h3{
+  position: relative;
+  left: -12%;
+  transition-duration: 0.3s;
+}
+
+.home-button {
+  position: absolute;
+  height: 60%;
+  left: 1.5%;
+  top: 18%;
+  filter: invert(100%);
+  transition-duration: 0.3s;
+}
+
+.home-button:hover {
+  filter: invert(0%);
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+/*Scrollbar*/
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #5c5f61
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dddcdc;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9a9e9e;
+}
+
+/*Seccion SobreMi*/
 
 .card {
   background-color: #020f1b;
@@ -190,6 +223,7 @@ hr {
   margin: 3%;
   height: 95%;
   text-align: left;
+  opacity: 20%;
 }
 
 .card:hover {
@@ -206,15 +240,6 @@ hr {
   margin-bottom: 3%;
 }
 
-li {
-  line-height: 3.5rem;
-  margin-left: 7%;
-}
-
-ul {
-  padding-left: 0%;
-}
-
 .habilidades-col {
   text-align: center;
 }
@@ -224,28 +249,15 @@ ul {
 }
 
 .habilidades-col ul{
-  margin-left: 30%;
-}
-
-li {
-  color: #fff;
-  font-size: 1.5rem;
-  list-style: none;
-}
-
-ul li::before {
-  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: orange; /* Change the color */
-  font-weight: bolder; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  margin-left: 33%;
 }
 
 .estrella-rating {
   color: orange;
   margin-bottom: 5%;
 }
+
+/*Seccion contacto*/
 
 #contact {
   text-align: center;
@@ -266,4 +278,15 @@ ul li::before {
 
 .link-footer:hover {
   color: #cdffeb;
+}
+
+/*Js classes*/
+
+.on-view{
+  opacity: 100%;
+  transition-duration: 0.9s;
+}
+
+.on-view-static{
+  opacity: 100%;
 }
