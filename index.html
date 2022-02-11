@@ -48,11 +48,9 @@
   </head>
   <body>
     <div class="nav-bar">
-      <a href="proyects/DrumKit/index.html">
-        <div class="proyectos-btn button-bar">
-          <h3>Proyectos</h3>
-        </div>
-      </a>
+      <div class="proyectos-btn button-bar">
+        <h3>Proyectos</h3>
+      </div>
       <div class="aboutMe-btn button-bar">
         <h3>Sobre Mi</h3>
       </div>
@@ -63,22 +61,36 @@
     <section id="home">
       <div class="home container-fluid">
         <div class="row">
-          <div class="titulo col-lg-6">
-            <h1>Mateo Rodríguez Castillo</h1>
-            <hr />
-            <p>
-              Estudiante de Ingeniería en Computación con un gran interés en la
-              programación. Con la capacidad de aprender y aplicar mis
-              conocimientos al ámbito profesional. En busca de una oportunidad
-              laboral en la que desarollar mis habilidades y adquirir
-              experiencia.
-            </p>
-          </div>
-          <div class="profile-col col-lg-6">
-            <img class="img-profile" src="img/istockphoto-462112713-612x612.jpg" alt="">
+          <div class="carousel col-lg-12">
+            <div
+              id="carouselTestimonials"
+              class="carousel slide"
+              data-ride="carousel"
+              data-interval="3500"
+              data-pause="hover"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="proyects/DrumKit/index.html">
+                  <img class="carouselProyectsImg"
+                    src="img/Opera Instantánea_2022-02-11_172441_127.0.0.1.png"
+                    alt="imgEscolaridad1"
+                  />
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="proyects/Simon Game Challenge Starting Files/index.html">
+                  <img class="carouselProyectsImg"
+                    src="img/Opera Instantánea_2022-02-11_172832_127.0.0.1.png"
+                    alt="imgEscolaridad2"
+                  />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-lg-6"></div>
           <div class="carousel col-lg-6">
             <h2>Escolaridad</h2>
@@ -112,12 +124,28 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <hr class="aux" />
     <section id="aboutMe">
       <div class="container-fluid">
+        <div class="introd-about-me row">
+          <div class="titulo col-lg-6">
+            <h1>Mateo Rodríguez Castillo</h1>
+            <hr />
+            <p>
+              Estudiante de Ingeniería en Computación con un gran interés en la
+              programación. Con la capacidad de aprender y aplicar mis
+              conocimientos al ámbito profesional. En busca de una oportunidad
+              laboral en la que desarollar mis habilidades y adquirir
+              experiencia.
+            </p>
+          </div>
+          <div class="profile-col col-lg-6">
+            <img class="img-profile" src="img/istockphoto-462112713-612x612.jpg" alt="">
+          </div>
+        </div>
         <div class="row">
           <div class="aboutMe-col col-lg-4 col-md-12">
             <div class="objectives-card card">

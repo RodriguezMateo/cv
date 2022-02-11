@@ -8,10 +8,12 @@ body {
 #home {
   width: 100%;
   margin-top: 3.3em;
+  height: 100vh;
 }
 
 #home > .container-fluid {
-  padding: 2.2% 15% 45px;
+  height: 100vh;
+  /*padding: 2.2% 15% 45px;*/
 }
 
 /* Seccion perfil */
@@ -24,6 +26,11 @@ body {
   width: 20vw;
   min-height: 250px;
   margin-top: 5%;
+  text-align: right;
+}
+
+.introd-about-me{
+  margin-bottom: 7%;
 }
 
 /* Generales */
@@ -53,11 +60,15 @@ a:hover {
 }
 
 img {
-  height: 300px;
-  width: 25vw;
-  min-width: 280px;
   border-radius: 10px;
-  text-align: right;
+  text-align: center;
+  max-width: 1200px;
+  max-height: 650px;
+}
+
+.carouselProyectsImg:hover{
+  box-shadow: 0 0 5px 0px #fff;
+  transition-duration: 0.2s;
 }
 
 h1 {
