@@ -24,7 +24,8 @@ body {
 .img-profile{
   height: 18vw;
   width: 20vw;
-  min-height: 250px;
+  min-height: 300px;
+  min-width: 300px;
   margin-top: 5%;
   text-align: right;
 }
