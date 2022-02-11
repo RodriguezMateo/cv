@@ -277,6 +277,13 @@ ul li::before {
 
 .text-footer {
   margin-top: 0;
+  margin-bottom: 0;
+}
+
+.text-footer-small{
+  font-size: 1rem;
+  color: grey;
+  margin-top: 0;
 }
 
 .link-footer:hover {
