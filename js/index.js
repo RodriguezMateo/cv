@@ -4,7 +4,10 @@ function scrollToAnchor(aid){
         scrollTop: destination.offset().top - 40
       },'slow');
   }
-  
+  $(document).on('click', '.proyectos-btn', function(){
+    scrollToAnchor('home');
+  })
+
   $(document).on('click', '.aboutMe-btn', function(){
     scrollToAnchor('aboutMe');
   })
