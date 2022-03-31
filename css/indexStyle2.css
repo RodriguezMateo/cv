@@ -8,7 +8,6 @@ body {
 #home {
   width: 100%;
   margin-top: 3.3em;
-  height: 100vh;
 }
 
 #home > .container-fluid {
@@ -65,6 +64,14 @@ img {
   text-align: center;
   max-width: 1200px;
   max-height: 650px;
+}
+
+.proyect-row{
+  margin-top: 10%;
+}
+
+.carouselProyectsImg{
+  margin-top: 10%;
 }
 
 .carouselProyectsImg:hover{
@@ -300,4 +307,36 @@ ul li::before {
 
 .on-view-static{
   opacity: 100%;
+}
+
+@media (max-width: 550px) {
+
+  .button-bar{
+    width: 7em;
+  }
+
+  h2{
+    font-size: 2.5em;
+  }
+
+  h1{
+    font-size: 4em;
+  }
+
+  p{
+    font-size: 1em;
+  }
+
+  li{
+    font-size: 1.3rem;
+  }
+
+  .habilidades-col ul{
+    margin-left: 25%;
+  }
+
+  #home > .container-fluid{
+    height: auto;
+  }
+
 }
